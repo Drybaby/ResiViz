@@ -10,7 +10,7 @@ interface ThrottleIndicatorProps {
   steeringDeadzone?: number
 }
 
-const orangeHsl = parseToHsl(colors.orange)
+const greenHsl = parseToHsl(colors.green)
 
 const SteeringLeft = css`
   justify-content: flex-end;
@@ -27,12 +27,12 @@ const Steering = styled('div')`
   align-items: center;
   width: 100%;
   height: 96px;
-  background-color: ${hsl(orangeHsl.hue, orangeHsl.saturation, orangeHsl.lightness * 0.25)};
+  background-color: ${hsl(greenHsl.hue, greenHsl.saturation, greenHsl.lightness * 0.25)};
   text-align: center;
 `
 
 const SteeringInner = styled('div')`
-  background-color: ${hsl(orangeHsl.hue, orangeHsl.saturation, orangeHsl.lightness * 0.75)};
+  background-color: ${hsl(greenHsl.hue, greenHsl.saturation, greenHsl.lightness * 0.75)};
   height: 100%;
 `
 
