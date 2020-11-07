@@ -16,7 +16,7 @@ interface FooterPageProps {
 const MILLISECONDS_PER_FRAME = 1000 / 60
 const ACCELERATE_BUTTON = 0
 const RESET_BUTTON = 1
-const BRAKE_BUTTON = 2
+const BRAKE_BUTTON = 6
 const STEERING_DEADZONE = 0.01
 
 const TrackManiaControlBlockPage: NextPage<FooterPageProps> = () => {
