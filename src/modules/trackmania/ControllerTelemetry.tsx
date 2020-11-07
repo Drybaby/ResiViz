@@ -46,6 +46,16 @@ const ControllerTelemetry: React.FC<ControllerTelemetryProps> = ({
         >
           <SteeringIndicator axisValue={controller?.steering} steeringDeadzone={steeringDeadzone} />
         </div>
+                    <div
+              css={css`
+                border-radius: 8px;
+                overflow: hidden;
+                margin-right: 50px;
+              `}
+            >
+              <ThrottleIndicator value={controller?.accelerate} />
+              <BrakeIndicator value={controller?.brake} />
+            </div>
         <div
           css={css`
             display: flex;
@@ -61,16 +71,6 @@ const ControllerTelemetry: React.FC<ControllerTelemetryProps> = ({
               width: 100%;
             `}
           >
-            <div
-              css={css`
-                border-radius: 8px;
-                overflow: hidden;
-                margin-right: 50px;
-              `}
-            >
-              <ThrottleIndicator value={controller?.accelerate} />
-              <BrakeIndicator value={controller?.brake} />
-            </div>
             {showReset && (
               <div
                 css={css`
