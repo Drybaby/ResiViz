@@ -32,7 +32,7 @@ const Root = styled('div')`
 const ThrottleIndicator: React.FC<ThrottleIndicatorProps> = ({ value }) => {
   return (
     <Root value={value}>
-      <InnerText>Throttle</InnerText>
+      <InnerText> </InnerText>
     </Root>
   )
 }
