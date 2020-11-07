@@ -63,9 +63,9 @@ const ControllerTelemetry: React.FC<ControllerTelemetryProps> = ({
           >
             <div
               css={css`
-                width: 100%;
                 border-radius: 8px;
                 overflow: hidden;
+                margin-right: 50px;
               `}
             >
               <ThrottleIndicator value={controller?.accelerate} />
